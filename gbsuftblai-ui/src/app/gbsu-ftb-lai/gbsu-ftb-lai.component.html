@@ -1,0 +1,14 @@
+<div>
+<div class="container">
+    <h2>Already converted values : </h2>
+    
+    <ul>
+    <li *ngFor="let numberConverted of itemresult"style="background-color:rgb(173,255,47)">
+      {{numberConverted.numberToConvert}} and the result is {{numberConverted.result}}
+    </li>
+</ul>
+	
+</div>
+<app-gbsu-ftb-lai-form (submitNumberOutput)="convertNumber($event)"></app-gbsu-ftb-lai-form>
+</div>
+
